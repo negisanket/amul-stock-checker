@@ -1,0 +1,25 @@
+name: Amul Stock Checker
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # ⏰ Every hour UTC
+  workflow_dispatch:      # ➕ Manual run option
+
+jobs:
+  check-stock:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run stock checker
+        run: python check_stock.py
