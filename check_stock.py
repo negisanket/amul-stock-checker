@@ -17,11 +17,15 @@ def check_stock(alias):
         data = response.json()
         if data.get("data"):
             product = data["data"][0]
-            available = product.get("available", 0)
-            return available > 0, product["name"], product["alias"]
+
+            # ✅ The real stock count
+            inventory_quantity = product.get("inventory_quantity", 0)
+
+            return inventory_quantity > 0, product["name"], product["alias"]
     except Exception as e:
-        print(f"Error checking {alias}: {e}")
+        print(f"❌ Error checking {alias}: {e}")
     return False, None, None
+
 
 def send_push_notification(title, message):
     try:
