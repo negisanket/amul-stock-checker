@@ -39,7 +39,7 @@ def main():
             msg = f"HUURRRRRRRRRay stock available!\n{name}\n🔗 https://shop.amul.com/en/product/{alias_url}"
             send_push_notification("🎉 Stock Available!", msg)
             return
-    send_push_notification("😞 Still Out of Stock", ":( None of the products are available yet.")
+    send_push_notification("SAAAAADDD Still Out of Stock", ":( None of the products are available yet.")
 
 if __name__ == "__main__":
     main()
