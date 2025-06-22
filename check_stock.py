@@ -1,6 +1,6 @@
 import requests
 
-NTFY_TOPIC = "your-ntfy-topic"
+NTFY_TOPIC = "amul-stock-alert"
 PRODUCTS = [
     "amul-kool-protein-milkshake-or-chocolate-180-ml-or-pack-of-30",  # ✅ confirmed in-stock
     "amul-high-protein-plain-lassi-200-ml-or-pack-of-30",
