@@ -43,7 +43,7 @@ def main():
             return
 
     # If no stock found
-    send_push_notification("😞 Still Out of Stock", ":( Not yet available. We'll check again in an hour!")
+    send_push_notification("SAAADDDD Still Out of Stock", ":( Not yet available. We'll check again in an hour!")
 
 if __name__ == "__main__":
     main()
