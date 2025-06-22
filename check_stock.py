@@ -2,7 +2,7 @@ import requests
 
 NTFY_TOPIC = "amul-stock-alert"
 PRODUCTS = [
-    "amul-kool-protein-milkshake-or-chocolate-180-ml-or-pack-of-30",  # ✅ confirmed in-stock
+    "amul-kool-protein-milkshake-or-kesar-180-ml-or-pack-of-30",  # ✅ confirmed in-stock
     "amul-high-protein-plain-lassi-200-ml-or-pack-of-30",
     "amul-high-protein-rose-lassi-200-ml-or-pack-of-30",
     "amul-high-protein-buttermilk-200-ml-or-pack-of-30"
