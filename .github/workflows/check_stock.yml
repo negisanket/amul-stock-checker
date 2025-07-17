@@ -2,8 +2,6 @@ name: Amul Stock Checker
 
 on:
   schedule:
-    - cron: '0 * * * *'  # ⏰ Every hour UTC
-  workflow_dispatch:      # ➕ Manual run option
 
 jobs:
   check-stock:
